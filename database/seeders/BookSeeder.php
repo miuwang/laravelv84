@@ -14,6 +14,7 @@ class BookSeeder extends Seeder
     public function run()
     {
         //
+        Book::truncate();
         Book::factory()->count(10)->create();
     }
 }

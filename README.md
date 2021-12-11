@@ -21,6 +21,29 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
+## 設定
+
+- 下載
+- `.env`檔改設定
+
+```
+APP_URL=http://[...]
+
+DB_HOST=[...]
+DB_PORT=3306
+DB_DATABASE=[...]
+DB_USERNAME=[...]
+DB_PASSWORD=[...]
+
+```
+
+- 建立連線資料庫
+- 下指令
+
+```php
+    php artisan migrations
+    php artisan db:seed
+```
 ## Learning Laravel
 
 Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.

@@ -2,6 +2,8 @@
 
 namespace Database\Factories;
 
+
+//use Faker\Provider\Lorem;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class BookFactory extends Factory
@@ -13,11 +15,11 @@ class BookFactory extends Factory
      */
     public function definition()
     {
+      //  $this->faker->addProvider(new Lorem($this->faker));
         return [
             'code' => $this->faker->bothify('?????##'),
             'author' =>$this->faker->name(),
-            'title' => $this->faker->name(),//$this->faker->words(3),
-
+            'title' => $this->faker->words(3, true)
         ];
     }
 }

@@ -176,7 +176,7 @@ return [
         App\Providers\RouteServiceProvider::class,
         //第三方套件
         Barryvdh\Debugbar\ServiceProvider::class,
-
+        Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
     ],
 
     /*

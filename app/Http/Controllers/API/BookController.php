@@ -37,7 +37,7 @@ class BookController extends Controller
                 'author' => $request->author,
             ]);
 
-        return response()->json(['success' => true]);
+        return response()->json(['success' => true],200);
     }
 
     /**

@@ -6,6 +6,10 @@ use Illuminate\Support\Facades\Validator;
 
 class AjaxBookController extends Controller
 {
+    /**
+     * @param Request $request
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\JsonResponse
+     */
     public function index(Request $request)
     {
         if($request->ajax()){
@@ -21,6 +25,11 @@ class AjaxBookController extends Controller
     {
         return view('book.create');
     }
+
+    /**
+     * @param Request $request
+     * @return \Illuminate\Http\JsonResponse
+     */
     public function store(Request $request)
     {
         $validator = Validator::make($request->all(),[
